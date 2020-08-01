@@ -17,9 +17,7 @@
             <p><b>Created at:</b> {{ record.created_at }}</p>
             <a href="{% url 'index'  %}" class="btn btn-primary">Back</a>
             </div>
-
         {% endfor %}
-
         {% else %}
            <p>Sorry, there is a search result 0 </p>
         {% endif %}

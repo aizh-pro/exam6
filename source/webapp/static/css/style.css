@@ -96,3 +96,19 @@ body {
     color: red;
     margin-top: 2px;
 }
+.footer {
+    background-color: black;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 110px;
+    height: 75px;
+}
+.footer p {
+    color: #e0e0e0;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+.footer a {
+    color: #e0e0e0;
+    text-transform: uppercase;
+}
