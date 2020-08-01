@@ -1,5 +1,8 @@
+from django.contrib.admin.templatetags.admin_list import pagination
 from django.http import HttpResponseNotAllowed
 from django.shortcuts import render, redirect, get_object_or_404
+from django.db.models import Q
+
 
 from webapp.forms import RecordForm
 from webapp.models import Record
@@ -76,3 +79,18 @@ def record_delete_view(request, pk):
         return redirect('index')
     else:
         return HttpResponseNotAllowed(permitted_methods=['GET', 'POST'])
+
+def search(request):
+    template = '/record/post_list.html'
+    query = request.GET.get('q')
+    results = Record.objects.filter(Q(author__icontains=query))
+
+
+def search_result_view(request):
+    query = request.GET.get('q', '')
+    if query:
+        queryset = (Q(author__icontains=query))
+        results = Record.objects.filter(queryset).distinct()
+    else:
+        results = []
+    return render(request, 'search_result.html', {'results': results, 'query': query})

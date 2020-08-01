@@ -21,10 +21,10 @@
             <li><a href="{% url 'record_create' %}">Create Record</a></li>
             {% block menu %}{% endblock %}
         </ul>
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
+    <form method='GET' action="search/result/" class="form-inline">
+    <input class="form-control mr-sm-2" type="search" type="search" name="q" placeholder="Search"aria-label="Search"/>
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>#}
+</form>
 </div>
 </nav>
 

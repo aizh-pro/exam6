@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block menu %}
+
+{% endblock %}
+{% block content %}
+   <h1>Search Result</h1>
+   <hr/>
+       {% if query %}
+        {% if results %}
+        {% for item in results %}
+            <div class="container">
+            <div class="card my-5">
+            <h5 class="card-header">{{ item|escape }} {{ item.email }}</h5>
+            <div class="card-body">
+            <h5 class="card-title"><b>Статус:</b> {{ item.get_status_display }}</h5>
+            <p class="card-text pre"><b>Text:</b> {{ item.text }}</p>
+            <p><b>Created at:</b> {{ record.created_at }}</p>
+            <a href="{% url 'index'  %}" class="btn btn-primary">Back</a>
+            </div>
+
+        {% endfor %}
+
+        {% else %}
+           <p>Sorry, there is a search result 0 </p>
+        {% endif %}
+    {% endif %}
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
