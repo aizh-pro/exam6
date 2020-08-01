@@ -6,16 +6,18 @@
    <h1>Records</h1>
    <hr/>
    {% for record in records %}
-       <div class="card">
+       <div class="container">
+       <div class="card my-5">
        <h5 class="card-header">{{ record.author }} {{ record.email }}</h5>
        <div class="card-body">
-    <h5 class="card-title">Статус: {{ record.get_status_display }}</h5>
-    <p class="card-text pre">Text:{{ record.text }}</p>
-   <p>Created at:{{ record.created_at }}</p>
-    <a href="{% url 'record_update' record.pk %}" class="btn btn-primary">Update</a>
-   <a href="{% url 'record_delete' record.pk %}" class="btn btn-primary">Delete</a>
+    <h5 class="card-title"><b>Статус:</b> {{ record.get_status_display }}</h5>
+    <p class="card-text pre"><b>Text:</b> {{ record.text }}</p>
+   <p><b>Created at:</b> {{ record.created_at }}</p>
+    <a href="{% url 'record_update' record.pk %}" class="btn btn-warning">Update</a>
+   <a href="{% url 'record_delete' record.pk %}" class="btn btn-danger">Delete</a>
   </div>
 </div>
+       </div>
    {% endfor %}
 {% endblock %}
 
