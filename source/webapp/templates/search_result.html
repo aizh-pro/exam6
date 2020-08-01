@@ -9,15 +9,15 @@
         {% if results %}
 
         {% for item in results %}
-            <div class="container">
-            <div class="card my-5">
-            <h5 class="card-header">{{ item|escape }} {{ item.email }}</h5>
-            <div class="card-body">
-            <h5 class="card-title"><b>Статус:</b> {{ item.get_status_display }}</h5>
-            <p class="card-text pre"><b>Text:</b> {{ item.text }}</p>
-            <p><b>Created at:</b> {{ record.created_at }}</p>
-            </div>
-            </div>
+        <div class="container">
+        <div class="card my-5">
+        <h5 class="card-header">{{ item|escape }} {{ item.email }}</h5>
+        <div class="card-body">
+        <h5 class="card-title"><b>Статус:</b> {{ item.get_status_display }}</h5>
+        <p class="card-text pre"><b>Text:</b> {{ item.text }}</p>
+        <p><b>Created at:</b> {{ record.created_at }}</p>
+        </div>
+        </div>
         {% endfor %}
             <a href="{% url 'index'  %}" class="btn btn-primary">Back</a>
 
