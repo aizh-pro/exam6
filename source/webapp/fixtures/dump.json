@@ -1,0 +1,74 @@
+[
+{
+  "model": "webapp.record",
+  "pk": 1,
+  "fields": {
+    "author": "Aizhan",
+    "status": "active",
+    "text": "Long text text text",
+    "email": "aitkeeva.aizhan@gmail.com",
+    "created_at": "2020-08-01T06:32:15.861Z",
+    "updated_at": "2020-08-01T06:32:15.861Z"
+  }
+},
+{
+  "model": "webapp.record",
+  "pk": 2,
+  "fields": {
+    "author": "Me 0",
+    "status": "active",
+    "text": "My text text 0",
+    "email": "m@test.test",
+    "created_at": "2020-08-01T06:39:39.092Z",
+    "updated_at": "2020-08-01T06:39:39.092Z"
+  }
+},
+{
+  "model": "webapp.record",
+  "pk": 3,
+  "fields": {
+    "author": "Me 1",
+    "status": "active",
+    "text": "My text text 1",
+    "email": "m@test.test",
+    "created_at": "2020-08-01T06:39:39.135Z",
+    "updated_at": "2020-08-01T06:39:39.135Z"
+  }
+},
+{
+  "model": "webapp.record",
+  "pk": 4,
+  "fields": {
+    "author": "Me 2",
+    "status": "active",
+    "text": "My text text 2",
+    "email": "m@test.test",
+    "created_at": "2020-08-01T06:39:39.181Z",
+    "updated_at": "2020-08-01T06:39:39.181Z"
+  }
+},
+{
+  "model": "webapp.record",
+  "pk": 5,
+  "fields": {
+    "author": "Me 3",
+    "status": "active",
+    "text": "My text text 3",
+    "email": "m@test.test",
+    "created_at": "2020-08-01T06:39:39.226Z",
+    "updated_at": "2020-08-01T06:39:39.226Z"
+  }
+},
+{
+  "model": "webapp.record",
+  "pk": 6,
+  "fields": {
+    "author": "Me 4",
+    "status": "active",
+    "text": "My text text 4",
+    "email": "m@test.test",
+    "created_at": "2020-08-01T06:39:39.272Z",
+    "updated_at": "2020-08-01T06:39:39.272Z"
+  }
+}
+]
