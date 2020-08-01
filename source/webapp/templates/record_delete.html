@@ -1,16 +1,25 @@
 {% extends 'base.html' %}
 {% block title %}Delete{% endblock %}
 {% block menu %}
-    <li><a href="{% url 'index' %}">Отмена</a></li>
+    <li><a href="{% url 'index' %}">Back</a></li>
 {% endblock %}
 {% block content %}
-    <h1>Вы уверены, что хотите удалить задачу "{{ record.author }}"?</h1>
-    <p>By: {{ record.email }} | {{ record.created_at }}</p>
+    <div class="card">
+  <h5 class="card-header">Вы уверены, что хотите удалить данную запись?</h5>
+ <div class="card-body">
+    <h5 class="card-title">By: {{ record.author }} {{ record.email }}</h5>
+    <p class="card-text">{{ record.text }}</p>
+    <p>{{ record.created_at }}</p>
     <form action="{% url "record_delete" record.pk %}" method="post">
         {% csrf_token %}
-        <p><input type="submit" value="Да"></p>
-        <p><a href="{% url 'index'  %}" >Отмена</a></p>
+        <p><input class="btn btn-danger" type="submit" value="Удалить"></p>
+        <a href="{% url 'index'  %}" class="btn btn-primary" role="button" aria-pressed="true">Отмена</a>
     </form>
-    <h3>Полное описание задачи: </h3>
-    <p>{{ record.text }}</p>
+ </div>
+</div>
 {% endblock %}
+
+
+
+
+
