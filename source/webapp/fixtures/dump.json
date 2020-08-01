@@ -70,5 +70,35 @@
     "created_at": "2020-08-01T06:39:39.272Z",
     "updated_at": "2020-08-01T06:39:39.272Z"
   }
+},
+{
+  "model": "webapp.record",
+  "pk": 7,
+  "fields": {
+    "author": "Jack",
+    "status": "blocked",
+    "text": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal",
+    "email": "aitkeeva.aizhan@gmail.com",
+    "created_at": "2020-08-01T08:25:51.192Z",
+    "updated_at": "2020-08-01T08:25:51.192Z"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$bmGi0nffwoW5$t5cRUDZDk/Vz4O80qtY3pel2ylZINALrDLhpSnGKISs=",
+    "last_login": "2020-08-01T06:49:38.165Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-08-01T06:48:34.960Z",
+    "groups": [],
+    "user_permissions": []
+  }
 }
 ]

@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from webapp import views as webapp_views
-
+from webapp.views import record_create_view, index_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', webapp_views.index_view)
+    path('', index_view, name='index'),
+    path('records/add/', record_create_view, name='record_create'),
 ]
