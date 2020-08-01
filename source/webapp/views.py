@@ -79,7 +79,7 @@ def record_delete_view(request, pk):
     else:
         return HttpResponseNotAllowed(permitted_methods=['GET', 'POST'])
 
-
+#работает только со страницы главной
 def search_result_view(request):
     query = request.GET.get('q', '')
     if query:
